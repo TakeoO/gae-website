@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Contact page</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <pre>
+        {{Email}}
+        {{Message}}
+    </pre>
+    <h1>Contact</h1>
+    <div class="col-lg-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6708646013717!2d-0.08327998400837515!3d51.51925411765703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb2128c44e3%3A0xcc62d64d59af51bc!2sLiverpool+Street+Station%2C+London+EC2M+7QA%2C+Zdru%C5%BEeno+kraljestvo!5e0!3m2!1ssl!2ssi!4v1497544368677"
+                width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-8">
+        <h3>Contact</h3>
+        <form method="post" action="/contact-us">
+            <div class="form-group">
+                <label>Email: </label>
+                <input type="email" class="form-control" name="email" placeholder="Email" value="" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message: </label>
+                <textarea class="form-control" name="message"></textarea>
+            </div>
+
+            <input type="submit" value="Send" class="btn btn-primary pull-right btn-lg">
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <h3>Company info</h3>
+            <table class="table">
+                <tr>
+                    <td><strong>Company:</strong></td>
+                    <td>John Doe Company INC</td>
+                </tr>
+                <tr>
+                    <td><strong>Address:</strong></td>
+                    <td>Liverpool Street, London</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td><a href="tel:00386130730467">01(307) 30467</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td><a href="mailto:jan.jn3@gmail.com?subject='Testni subject'">jan.jn3@gmail.com</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
